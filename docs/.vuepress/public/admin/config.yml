@@ -1,7 +1,6 @@
 # 内容存储的位置
 backend:
-  name: github
-  repo: joyarkdev/joyark-docs
+  name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
 
 media_folder: "docs/.vuepress/public/images"
