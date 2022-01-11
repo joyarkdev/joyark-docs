@@ -11,5 +11,8 @@ actions:
   - text: Privacy Policy
     link: /guide/Terms/PrivacyPolicy.md
     type: primary
+  - text: Data deletion information
+    link: /guide/Terms/DataDeletionInformation.md
+    type: primary
   
 ---
