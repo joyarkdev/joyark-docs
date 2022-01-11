@@ -6,13 +6,13 @@ heroImage: /images/logo.png
 heroAlt: 'docs'
 actions:
   - text: Terms Of Service
-    link: /guide/Terms/TermsOfService.md
+    link: /en/Terms/TermsOfService.md
     type: primary
   - text: Privacy Policy
-    link: /guide/Terms/PrivacyPolicy.md
+    link: /en/Terms/PrivacyPolicy.md
     type: primary
   - text: Data deletion information
-    link: /guide/Terms/DataDeletionInformation.md
+    link: /en/Terms/DataDeletionInformation.md
     type: primary
   
 ---

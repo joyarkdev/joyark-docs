@@ -1,5 +1,53 @@
 import { defineUserConfig } from 'vuepress'
 import type { DefaultThemeOptions } from 'vuepress'
+import path from 'path';
+import fs from 'fs';
+
+// 自动获取侧边栏
+  function readFileList(dir,filesList = [],isChild = false) {
+    const pathDir = `./docs/${dir}/`
+  let files = fs.readdirSync(pathDir);
+  files.forEach((item,index) => {
+    const fullPath = path.join(pathDir,item);
+    const stat = fs.statSync(fullPath);
+    // 是否还有子目录
+    if(stat.isDirectory()){
+      const link = fullPath.replace(`docs`,'')
+      filesList.push({
+        text: path.basename(fullPath),
+        link,
+        children:[]
+      })
+      readFileList(path.join(dir,item), filesList,true)
+    } else {
+      const name = path.extname(fullPath)
+      console.log(path.basename(fullPath))
+      const noHome = path.basename(fullPath) != 'README.md'
+      if(name == '.md' && noHome){
+        const link = fullPath.replace(`docs`,'')
+        const sidebar = {
+          text: path.basename(fullPath, path.extname(fullPath)),
+          link,
+        }
+        if(isChild){
+        
+          const len = filesList.length - 1;
+          if(filesList[len].children){
+            if(index == 0){
+              filesList[len].link = link
+            }
+            filesList[len].children.push(sidebar)
+          }
+        } else {
+          filesList.push(sidebar)
+        }
+      }
+     
+    }
+  })
+
+  return filesList;
+}
 
 export default defineUserConfig<DefaultThemeOptions>({
     // 站点配置
@@ -27,37 +75,28 @@ export default defineUserConfig<DefaultThemeOptions>({
   themeConfig: {
     displayAllHeaders:true,
     logo: '/images/logo.png',
+  
     locales: {
       '/': {
         selectLanguageName: 'English',
         // navbar: [
         //   {
         //     text: 'About us',
-        //     link: '/guide/Terms/',
+        //     link: '/Terms/',
         //     children: [
         //       {
         //         text: 'Terms Of Service',
-        //         link: '/guide/Terms/TermsOfService.md', 
+        //         link: '/Terms/TermsOfService.md', 
         //       },
         //       {
         //         text: 'Privacy Policy',
-        //         link: '/guide/Terms/PrivacyPolicy.md'
+        //         link: '/Terms/PrivacyPolicy.md'
         //       }
         //   ],
         //   },
         // ],
-        
-        sidebar: [
-            {
-              text: 'Terms',
-              link: '/guide/Terms/TermsOfService.md',
-              children: [
-                '/guide/Terms/TermsOfService.md',
-                '/guide/Terms/PrivacyPolicy.md',
-              ],
-            },
-           
-          ],
+      
+        sidebar:readFileList('en')
       },
       '/zh/': {
         selectLanguageName: '简体中文',
@@ -65,29 +104,20 @@ export default defineUserConfig<DefaultThemeOptions>({
         // navbar: [
         //   {
         //     text: '关于我们',
-        //     link: '/zh/guide/Terms/',
+        //     link: '/zh/Terms/',
         //     children: [
         //       {
         //         text: '服务条款',
-        //         link: '/zh/guide/Terms/TermsOfService.md', 
+        //         link: '/zh/Terms/TermsOfService.md', 
         //       },
         //       {
         //         text: '隐私协议',
-        //         link: '/zh/guide/Terms/PrivacyPolicy.md'
+        //         link: '/zh/Terms/PrivacyPolicy.md'
         //       }
         //   ],
         //   },
         // ],
-        sidebar: [
-            {
-              text: '条款',
-              link: '/zh/guide/Terms/TermsOfService.md',
-              children: [
-                '/zh/guide/Terms/TermsOfService.md',
-                '/zh/guide/Terms/PrivacyPolicy.md',
-              ],
-            },
-          ]
+        sidebar:readFileList('zh')
       },
     },
   },
