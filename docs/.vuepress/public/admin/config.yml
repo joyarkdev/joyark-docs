@@ -2,7 +2,7 @@
 backend:
   name: git-gateway
   # name: github
-  # repo: joyarkdev/joyark-docs
+  repo: joyarkdev/joyark-docs
   branch: main # Branch to update (optional; defaults to master)
 
 media_folder: "docs/.vuepress/public/images"
