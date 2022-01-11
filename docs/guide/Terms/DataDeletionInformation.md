@@ -2,7 +2,7 @@
 lang: en-US
 title: Data deletion information
 description: Privacy Policy
---
+---
 # Data deletion information
 
 1. **Delete personal data**
