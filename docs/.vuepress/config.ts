@@ -11,8 +11,7 @@ import fs from 'fs';
     const fullPath = path.join(pathDir,item);
     const stat = fs.statSync(fullPath);
     // 是否还有子目录
-   const noList = ['docs/.vuepress','docs/.DS_Store','docs/en' ,'docs/zh']
-   console.log(fullPath,noList.includes(fullPath))
+   const noList = ['docs/.vuepress','docs/.DS_Store','docs/zh']
     if(stat.isDirectory() && !noList.includes(fullPath)){
       const link = fullPath.replace(`docs`,'')
       filesList.push({
