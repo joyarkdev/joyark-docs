@@ -12,7 +12,7 @@ actions:
     link: /zh/Terms/PrivacyPolicy.md
     type: primary
   - text: 数据删除指引
-    link: /zh/guide/Terms/DataDeletionInformation.md
+    link: /zh/Terms/DataDeletionInformation.md
     type: primary
 ---
 
