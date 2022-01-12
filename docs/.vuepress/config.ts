@@ -22,9 +22,7 @@ import fs from 'fs';
       })
       readFileList(path.join(dir,item), filesList,true)
     } else {
-      // console.log(444,path.extname(fullPath))
       const name = path.extname(fullPath)
-      // console.log(77,path.basename(fullPath))
       const noHome = path.basename(fullPath) != 'README.md'
       if(name == '.md' && noHome){
         const link = fullPath.replace(`docs`,'')
@@ -39,10 +37,10 @@ import fs from 'fs';
             if(index == 0){
               filesList[len].link = link
             }
-            filesList[len].children.push(sidebar)
+            filesList[len].children.push(link)
           }
         } else {
-          filesList.push(sidebar)
+          filesList.push(link)
         }
       }
      
