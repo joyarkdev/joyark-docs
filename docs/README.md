@@ -1,9 +1,10 @@
 ---
-sidebar: false
-pageClass: home
-home: true
 heroImage: /images/logo.png
-heroAlt: 'docs'
+pageClass: home
+date: 2022-01-12 11:42:17
+heroAlt: docs
+title: 测试一下
+sidebar: false
 actions:
   - text: Terms Of Service
     link: /en/Terms/TermsOfService.md
@@ -14,5 +15,7 @@ actions:
   - text: Data deletion information
     link: /en/Terms/DataDeletionInformation.md
     type: primary
-  
+home: true
 ---
+# 测试
+- 添加后会不会再页面中直接显示sidebar
