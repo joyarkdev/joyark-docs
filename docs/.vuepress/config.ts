@@ -5,13 +5,15 @@ import fs from 'fs';
 
 // 自动获取侧边栏
   function readFileList(dir,filesList = [],isChild = false) {
-    const pathDir = `./docs/${dir}/`
+    const pathDir = `./docs/${dir}`
   let files = fs.readdirSync(pathDir);
   files.forEach((item,index) => {
     const fullPath = path.join(pathDir,item);
     const stat = fs.statSync(fullPath);
     // 是否还有子目录
-    if(stat.isDirectory()){
+   const noList = ['docs/.vuepress','docs/.DS_Store','docs/en' ,'docs/zh']
+   console.log(fullPath,noList.includes(fullPath))
+    if(stat.isDirectory() && !noList.includes(fullPath)){
       const link = fullPath.replace(`docs`,'')
       filesList.push({
         text: path.basename(fullPath),
@@ -20,8 +22,9 @@ import fs from 'fs';
       })
       readFileList(path.join(dir,item), filesList,true)
     } else {
+      // console.log(444,path.extname(fullPath))
       const name = path.extname(fullPath)
-      console.log(path.basename(fullPath))
+      // console.log(77,path.basename(fullPath))
       const noHome = path.basename(fullPath) != 'README.md'
       if(name == '.md' && noHome){
         const link = fullPath.replace(`docs`,'')
@@ -96,7 +99,7 @@ export default defineUserConfig<DefaultThemeOptions>({
         //   },
         // ],
       
-        sidebar:readFileList('en')
+        sidebar:readFileList('')
       },
       '/zh/': {
         selectLanguageName: '简体中文',
@@ -117,7 +120,7 @@ export default defineUserConfig<DefaultThemeOptions>({
         //   ],
         //   },
         // ],
-        sidebar:readFileList('zh')
+        sidebar:readFileList('zh/')
       },
     },
   },
