@@ -62,12 +62,10 @@ export default defineUserConfig<DefaultThemeOptions>({
     '/': {
       lang: 'en-US',
       title: 'Joyark docs',
-      // description: 'Vue-powered Static Site Generator',
     },
     '/zh/': {
       lang: 'zh-CN',
       title: 'Joyark docs',
-      // description: 'Vue 驱动的静态网站生成器',
     },
   },
 
@@ -75,48 +73,17 @@ export default defineUserConfig<DefaultThemeOptions>({
   themeConfig: {
     displayAllHeaders:true,
     logo: '/images/logo.png',
-  
     locales: {
       '/': {
         selectLanguageName: 'English',
-        // navbar: [
-        //   {
-        //     text: 'About us',
-        //     link: '/Terms/',
-        //     children: [
-        //       {
-        //         text: 'Terms Of Service',
-        //         link: '/Terms/TermsOfService.md', 
-        //       },
-        //       {
-        //         text: 'Privacy Policy',
-        //         link: '/Terms/PrivacyPolicy.md'
-        //       }
-        //   ],
-        //   },
-        // ],
-      
+        contributors:false,
         sidebar:readFileList('')
       },
       '/zh/': {
         selectLanguageName: '简体中文',
         selectLanguageText:'选择语言',
-        // navbar: [
-        //   {
-        //     text: '关于我们',
-        //     link: '/zh/Terms/',
-        //     children: [
-        //       {
-        //         text: '服务条款',
-        //         link: '/zh/Terms/TermsOfService.md', 
-        //       },
-        //       {
-        //         text: '隐私协议',
-        //         link: '/zh/Terms/PrivacyPolicy.md'
-        //       }
-        //   ],
-        //   },
-        // ],
+        lastUpdatedText:'上次更新',
+        contributors:false,
         sidebar:readFileList('zh/')
       },
     },

@@ -1,6 +1,6 @@
 # 内容存储的位置
 backend:
-  name: git-gateway
+  name: github
   repo: joyarkdev/joyark-docs
   branch: main # Branch to update (optional; defaults to master)
   
