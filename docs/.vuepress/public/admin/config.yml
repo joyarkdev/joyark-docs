@@ -10,6 +10,18 @@ media_folder: "docs/.vuepress/public/images"
 public_folder: "/images"
 
 collections: # A list of collections the CMS should be able to edit
+  - name: "home" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Home" # Used in the UI, ie.: "New Post"
+    folder: "docs" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}"
+    fields: # The fields each document in this collection have
+      # - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Categories", name: "categories", widget: "string", required: false}
+    # meta: # Meta data fields. Just like fields, but without any preview element
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
   - name: "terms" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Terms" # Used in the UI, ie.: "New Post"
     folder: "docs/Terms" # The path to the folder where the documents are stored
