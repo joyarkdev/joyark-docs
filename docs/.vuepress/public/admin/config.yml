@@ -23,7 +23,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
   - name: "terms-cn" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Terms(中文)" # Used in the UI, ie.: "New Post"
-    folder: "docs/cn/Terms" # The path to the folder where the documents are stored
+    folder: "docs/zh/Terms" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}"
     fields: # The fields each document in this collection have
