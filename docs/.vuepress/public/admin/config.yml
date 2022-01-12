@@ -6,7 +6,7 @@ backend:
   branch: main # Branch to update (optional; defaults to master)
 
 media_folder: "docs/.vuepress/public/images"
-public_folder: "docs/.vuepress/dist/"
+public_folder: "/images"
 
 collections: # A list of collections the CMS should be able to edit
   - name: "terms" # Used in routes, ie.: /admin/collections/:slug/edit
