@@ -10,9 +10,8 @@ const showPageNav = computed(() => router.currentRoute.value.query.showPageNav);
 </script>
 
 <template>
-<div :class="[inset ? 'inset' : '']">
-<ParentLayout >
-  </ParentLayout>
+<div class="inset">
+  <ParentLayout></ParentLayout>
 </div>
   
 </template>
