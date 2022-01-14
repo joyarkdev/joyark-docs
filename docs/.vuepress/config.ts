@@ -68,8 +68,8 @@ export default defineUserConfig<DefaultThemeOptions>({
       title: 'Joyark docs',
     },
   },
-
-    // 主题配置
+  theme: path.resolve(__dirname, './theme/index.ts'),
+  // 主题配置
   themeConfig: {
     displayAllHeaders:true,
     logo: '/images/logo.png',
