@@ -23,5 +23,8 @@ const showPageNav = computed(() => router.currentRoute.value.query.showPageNav);
   .page-nav{
     display:v-bind(showPageNav);
   }
+  .navbar{
+    display:v-bind(showPageNav);
+  }
 }
 </style>
