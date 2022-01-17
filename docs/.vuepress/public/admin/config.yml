@@ -3,23 +3,11 @@ backend:
   name: git-gateway
   repo: joyarkdev/joyark-docs
   branch: main # Branch to update (optional; defaults to master)
-  
-publish_mode: editorial_workflow
 
 media_folder: "docs/.vuepress/public/images"
 public_folder: "/images"
 
 collections: # A list of collections the CMS should be able to edit
-  - name: "home" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Home" # Used in the UI, ie.: "New Post"
-    folder: "docs" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    delete: false
-    slug: "{{slug}}"
-    fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
   - name: "terms" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Terms" # Used in the UI, ie.: "New Post"
     folder: "docs/Terms" # The path to the folder where the documents are stored
