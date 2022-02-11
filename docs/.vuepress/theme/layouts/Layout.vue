@@ -20,11 +20,19 @@ const showPageNav = computed(() => router.currentRoute.value.query.showPageNav);
 .inset{
   background:v-bind(bgColor);
   color:v-bind(textColor);
+  min-height:100vh;
   .page-nav{
     display:v-bind(showPageNav);
   }
   .navbar{
     display:v-bind(showPageNav);
+  }
+  .sidebar{
+    display:none;
+    background:v-bind(bgColor);
+  }
+  .page{
+    padding-left:0;
   }
 }
 </style>
