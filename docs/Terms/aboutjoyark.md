@@ -8,4 +8,5 @@ Official Email：[support@joyark.com](mailto:support@joyark.com)
 </br>
 </br>
 </br>
-<center>Copyright©2022JOYARK</center>
+
+<p align="center">Copyright©2022JOYARK</p>
