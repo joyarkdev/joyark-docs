@@ -88,5 +88,8 @@ export default defineUserConfig<DefaultThemeOptions>({
       },
     },
   },
+  markdown: {
+    html: true
+  }
 })
 
