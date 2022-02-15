@@ -16,6 +16,7 @@ onMounted(() => {
 <template>
 <div class="inset">
   <ParentLayout></ParentLayout>
+  <div>{{router.currentRoute.value.query}}</div>
 </div>
   
 </template>
