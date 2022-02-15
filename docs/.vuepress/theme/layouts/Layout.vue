@@ -9,9 +9,7 @@ const textColor = computed(() => router.currentRoute.value.query.color);
 const showPageNav = computed(() => router.currentRoute.value.query.showPageNav);
 onMounted(() => {
   // 测试是否接收到参数
-  if(router.currentRoute.value.query.debugger){
-    alert(JSON.stringify(router.currentRoute.value.query))
-  }
+  console.log(router.currentRoute.value.query)
 })
 </script>
 
@@ -34,11 +32,8 @@ onMounted(() => {
     display:v-bind(showPageNav);
   }
   .sidebar{
-    display:none;
-    background:v-bind(bgColor);
+    display:v-bind(showPageNav);
   }
-  .page{
-    padding-left:0;
-  }
+  
 }
 </style>
