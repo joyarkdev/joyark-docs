@@ -36,7 +36,9 @@ onBeforeMount(() => {
 // TODO:
 onMounted(() => {
   queryObj2.value = getQueryObject()
-  url.value = location.href
+  setTimeout(() => {
+    url.value = location.href
+  }, 5000);
 })
 </script>
 
