@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import {useRouter,} from 'vue-router'
-import {onBeforeMount,computed,ref} from 'vue'
+import {onBeforeMount,onMounted,computed,ref} from 'vue'
 import ParentLayout from '@vuepress/theme-default/lib/client/layouts/Layout.vue'
 const router = useRouter();
 // const state = reactive()
 const queryObj = ref();
+const queryObj2 = ref();
 const inset =ref('false')
 const bgColor =ref('')
 const textColor =ref('')
@@ -31,10 +32,18 @@ onBeforeMount(() => {
   textColor.value =queryObj.value.color;
   showPageNav.value =queryObj.value.showPageNav;
 })
+// TODO:
+onMounted(() => {
+  queryObj2.value = getQueryObject()
+})
 </script>
 
 <template>
 <div :class="[inset ? 'inset' : '']">
+  <div>queryObj:{{queryObj}}</div>
+  <br/>
+  <div>queryObj2:{{queryObj2}}</div>
+
   <ParentLayout></ParentLayout>
 </div>
   
