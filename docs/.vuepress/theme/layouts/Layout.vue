@@ -5,7 +5,6 @@ import ParentLayout from '@vuepress/theme-default/lib/client/layouts/Layout.vue'
 const router = useRouter();
 // const state = reactive()
 const queryObj = ref();
-const queryObj2 = ref();
 const url = ref();
 const inset =ref('false')
 const bgColor =ref('')
@@ -33,23 +32,10 @@ onBeforeMount(() => {
   textColor.value =queryObj.value.color;
   showPageNav.value =queryObj.value.showPageNav;
 })
-// TODO:
-onMounted(() => {
-  queryObj2.value = getQueryObject()
-  setTimeout(() => {
-    url.value = location.href
-  }, 5000);
-})
 </script>
 
 <template>
 <div :class="[inset ? 'inset' : '']">
-  <!-- TODO: -->
-  <div style="margin-top:100px;">queryObj:{{queryObj}}</div>
-  <br/>
-  <div>queryObj2:{{queryObj2}}</div>
-  <div>11111</div>
-  <div>url:{{url}}</div>
 
   <ParentLayout></ParentLayout>
 </div>
