@@ -6,6 +6,7 @@ const router = useRouter();
 // const state = reactive()
 const queryObj = ref();
 const queryObj2 = ref();
+const url = ref();
 const inset =ref('false')
 const bgColor =ref('')
 const textColor =ref('')
@@ -35,16 +36,18 @@ onBeforeMount(() => {
 // TODO:
 onMounted(() => {
   queryObj2.value = getQueryObject()
+  url.value = location.href
 })
 </script>
 
 <template>
 <div :class="[inset ? 'inset' : '']">
   <!-- TODO: -->
-  <div>queryObj:{{queryObj}}</div>
+  <div style="margin-top:100px;">queryObj:{{queryObj}}</div>
   <br/>
   <div>queryObj2:{{queryObj2}}</div>
   <div>11111</div>
+  <div>url:{{url}}</div>
 
   <ParentLayout></ParentLayout>
 </div>
