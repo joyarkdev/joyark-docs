@@ -50,6 +50,9 @@ onBeforeMount(() => {
   .page-nav{
     display:v-bind(showPageNav);
   }
+  .page-meta{
+    display:v-bind(showPageNav);
+  }
   .navbar{
     display:v-bind(showPageNav);
   }
