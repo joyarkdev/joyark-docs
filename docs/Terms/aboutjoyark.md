@@ -9,9 +9,9 @@ Official Email：[support@joyark.com](mailto:support@joyark.com)
 
 <div>
 <!--facebook-->
-<a href="https://www.facebook.com/JoyArkCloudGaming" rel="some text" target="joyarkh5"><img src="/images/fb.png" alt="" width="40px" style="margin-right:10px" /></a>
+<a href="https://www.facebook.com/JoyArkCloudGaming" rel="some text" target="_parent"><img src="/images/fb.png" alt="" width="40px" style="margin-right:10px" /></a>
 <!--instagram-->
-<a href="https://www.instagram.com/joyarkcloudgaming" rel="some text"><img src="/images/ins.png" alt="" width="40px" style="margin-right:10px" /></a>
+<a href="https://www.instagram.com/joyarkcloudgaming" rel="some text" target="_parent"><img src="/images/ins.png" alt="" width="40px" style="margin-right:10px" /></a>
 <!--tiktok-->
 <a href="https://www.tiktok.com/@joyarkcloudgaming?lang=en" rel="some text"><img src="/images/tiktok.png" alt="" width="40px" style="margin-right:10px" /></a>
 <!--youtube-->
