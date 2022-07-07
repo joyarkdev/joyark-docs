@@ -6,10 +6,4 @@ JoyArk is a common community of players around the world, which gives players a 
 
 Official Email：[support@joyark.com](mailto:support@joyark.com)
 
-<!--StartFragment-->
-
-<https://discord.gg/B9Gs3j9b>
-
-<!--EndFragment-->
-
 <p align="center">Copyright©2022JOYARK</p>
