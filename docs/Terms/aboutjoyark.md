@@ -6,7 +6,19 @@ JoyArk is a common community of players around the world, which gives players a 
 
 Official Email：[support@joyark.com](mailto:support@joyark.com)
 
-| [<img src="/images/dis.png" width="40px">](https://discord.gg/B9Gs3j9b) | [<img src="/images/dis.png" width="40px">](https://discord.gg/B9Gs3j9b) | [<img src="/images/dis.png" width="40px">](https://discord.gg/B9Gs3j9b) |
-| ----------------------------------------------------------------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+<div>
+<!--facebook-->
+<a href="https://www.facebook.com/JoyArkCloudGaming" rel="some text"><img src="/images/fb.png" alt="" width="40px" /></a>
+<!--instagram-->
+<a href="https://www.instagram.com/joyarkcloudgaming" rel="some text"><img src="/images/ins.png" alt="" width="40px" /></a>
+<!--tiktok-->
+<a href="https://www.tiktok.com/@joyarkcloudgaming?lang=en" rel="some text"><img src="/images/tiktok.png" alt="" width="40px" /></a>
+<!--youtube-->
+<a href="https://www.youtube.com/channel/UCFFg_CjVN84-Gi7uoHAy4wg" rel="some text"><img src="/images/youtube.png" alt="" width="40px" /></a>
+<!--iscord-->
+<a href="https://discord.gg/B9Gs3j9b" rel="some text"><img src="/images/dis.png" alt="" width="40px" /></a>
+<!--iscord-->
+<a href="https://twitter.com/JoyArkGames" rel="some text"><img src="/images/tw.png" alt="" width="40px" /></a>
+</div>
 
 <p align="center">Copyright©2022JOYARK</p>
