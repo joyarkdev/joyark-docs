@@ -12,7 +12,7 @@ Official Email：[support@joyark.com](mailto:support@joyark.com)
 <!--tiktok-->
 <a href="https://www.tiktok.com/@joyarkcloudgaming?lang=en" rel="some text"><img src="/images/tiktok.png" alt="" width="40px" style="margin-right:10px" /></a>
 <!--iscord-->
-<a href="https://discord.gg/NmNXMHDu" rel="some text"><img src="/images/dis.png" alt="" width="40px" style="margin-right:10px" /></a>
+<a href="https://discord.gg/DdD3E4tmau" rel="some text"><img src="/images/dis.png" alt="" width="40px" style="margin-right:10px" /></a>
 <!--iscord-->
 <a href="https://twitter.com/JoyArkGames" rel="some text"><img src="/images/tw.png" alt="" width="40px" /></a>
 </div>
