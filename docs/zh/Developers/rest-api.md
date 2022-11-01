@@ -49,7 +49,7 @@ fQIDAQAB
 <table>
     <tr>
         <th>支付渠道</th>
-        <th>国家/地区</th>
+        <th width="200">国家/地区</th>
         <th>支付钱包</th>
     </tr>
     <tr>
