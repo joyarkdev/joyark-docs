@@ -183,14 +183,14 @@ fQIDAQAB
 |  payType   |  是  | sring  |   30   |                             支付方式： Payermax Airwallex                              |
 |   mchId    |  是  |  int   |   64   |                                       平台商户号                                       |
 |    good    |  是  | sring  |  100   |                                       商品名称                                        |
-|  currency  |  是  | sring  |   3    | 币种代码，大写字母 备注：Payermax会根据国家代码自动将所以货币转为本币进行结算                                     |
+|  currency  |  是  | sring  |   3    |                    币种代码，大写字母 备注：Payermax会根据国家代码自动将所传货币转为本币进行结算                    |
 |   money    |  是  | sring  | (10,2) |                                       支付金额                                        |
 | returnUrl  |  是  | sring  |  256   |                                       跳转地址	                                       |
 |  country   |  否  | sring  |   3    |                                     国家代码，大写字母                                     |
 |   userId   |  否  |  int   |   64   |                                       用户ID                                        |
 |  language  |  否  | sring  |   8    |                                      收银台页面语言                                      |
 | productId  | 有条件 | string |   64   |                               payType= Payermax 必填                                |
-| +products  |  有条件  | Array | Array  |                              payType= Airwallex 必填                                              |
+| +products  |  有条件  | Array | Array  |                               payType= Airwallex 必填                               |
 |    code    |  否  | sring  |   64   |                                       商品ID                                        |
 |    desc    |  否  | sring  |  100   |                                       商品描述                                        |
 |    name    |  否  | sring  |  100   |                                       商品标题                                        |
