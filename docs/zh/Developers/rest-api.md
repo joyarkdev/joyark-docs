@@ -7,7 +7,7 @@ date: 2022-10-31 11:50:37
 ## Version: 1.0.0
 
 **Contact information:**  
-renlikang@dalongyun.com  
+renlikang@dalongyun.com
 
 ### **签名规则**
 ***
@@ -43,6 +43,115 @@ fQIDAQAB
 
 + **签名**
 >将请求报文ASCII排序组成对象后转换成json string后使用商户RSA私钥进行签名，将签名获得的值放入http header中，key为sign
+
+### **支付渠道**
+***
+<table>
+    <tr>
+        <th>支付渠道</th>
+        <th>国家/地区</th>
+        <th>支付钱包</th>
+    </tr>
+    <tr>
+        <td rowspan="2">Airwallex</td>
+        <td rowspan="2">全球</td>
+        <td>Visa</td>
+    </tr>
+    <tr>
+        <td>Mastercard</td>
+    </tr>
+    <tr>
+        <td rowspan="20">Payermax</td>
+        <td>中国香港</td>
+        <td>ALIPAYHK</td>
+    </tr>
+    <tr>
+        <td>印度尼西亚</td>
+        <td>BCA、BNI、BRI、BTPN、CIMB、Danamon、MUAMALAT、Mandiri、Maybank、Permata、Sinarmas、Credit/Debit Card(redirect)、Alfamart、BRI、Danamon、Maybank、Permata、One-Touch(DANA)、QRIS、Akulaku、DANA、Doku Wallet、OVO、ShopeePAY</td>
+    </tr>
+    <tr>
+        <td>印度</td>
+        <td>Net Banking、Net banking -Rapyd、UPI Collect、UPI by Pan、PhonePe / MobiKwik & more、PhonePe / MobiKwik & more by NoPan、PAYTM</td>
+    </tr>
+    <tr>
+        <td>韩国</td>
+        <td>Bank Transfer、Virtual Account、Credit Card、KAKAOPAY、PAYCO、toss</td>
+    </tr>
+    <tr>
+        <td>马来西亚</td>
+        <td>Axiata Boost、Grab Pay、Touch’n Go</td>
+    </tr>
+    <tr>
+        <td>菲律宾</td>
+        <td>Bank Transfer、BPI、UnionBank、BillEase、DragonPay Credits、Paymaya、GCash、Grab Pay</td>
+    </tr>
+    <tr>
+        <td>新加坡</td>
+        <td>eNETS、GrabPay、PayNow</td>
+    </tr>
+    <tr>
+        <td>泰国</td>
+        <td>TrueMoney One-Touch、Line Pay、PromptPay、TrueMoney</td>
+    </tr>
+    <tr>
+        <td>阿联酋</td>
+        <td>Visa/MasterCard</td>
+    </tr>
+    <tr>
+        <td>巴林</td>
+        <td>Visa/MasterCard</td>
+    </tr>
+    <tr>
+        <td>埃及</td>
+        <td>Visa/MasterCard</td>
+    </tr>
+    <tr>
+        <td>约旦</td>
+        <td>Visa/MasterCard</td>
+    </tr>
+    <tr>
+        <td>科威特</td>
+        <td>KNET、Visa/MasterCard</td>
+    </tr>
+    <tr>
+        <td>阿曼</td>
+        <td>Visa/MasterCard</td>
+    </tr>
+    <tr>
+        <td>卡塔尔</td>
+        <td>Visa/MasterCard</td>
+    </tr>
+    <tr>
+        <td>沙特阿拉伯</td>
+        <td>MADA、Visa/MasterCard</td>
+    </tr>
+    <tr>
+        <td>土耳其</td>
+        <td>Akbank、Alternatifbank、DenizBank、Finansbank、Garabti Bankasi、Halkbank、Kuveyt Türk、PTT、Türk Ekonomi Bankası、Türkiye Finans Katilim Bankasi、VakıfBank、Yapı Kredi、Ziraat Bank、İşbank、Şekerbank、Debit/Credit Card、Ininal、GPay Wallet、Papara、</td>
+    </tr>
+    <tr>
+        <td>巴西</td>
+        <td>Banco do Brasil、Bradesco、Caixa、Itau、Santander、Boleto、Boletofast、Lottery、PIX、Ame、MercadoPago、PagSeguro、PicPay</td>
+    </tr>
+    <tr>
+        <td>智利</td>
+        <td>WebPay、Credit Card、Servipag</td>
+    </tr>
+    <tr>
+        <td>哥伦比亚</td>
+        <td>Debit/Credit Card、PSE、Baloto、Davivienda、Efecty</td>
+    </tr>
+    <tr>
+        <td>墨西哥</td>
+        <td>BBVA、Banorte、SPEI、STP、Santander、Debit/Credit Card、OXXO</td>
+    </tr>
+    <tr>
+        <td>秘鲁</td>
+        <td>BBVA、BCP、Interbank、Debit/Credit Card、PagoEfectivo</td>
+    </tr>
+</table>
+
++ **签名算法**
 
 ### **创建订单**
 ***
@@ -253,3 +362,5 @@ fQIDAQAB
 
 + **返回**
 >成功时，http返回状态码为200
+
+
