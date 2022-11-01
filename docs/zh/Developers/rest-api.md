@@ -61,7 +61,7 @@ fQIDAQAB
         <td>Mastercard</td>
     </tr>
     <tr>
-        <td rowspan="20">Payermax</td>
+        <td rowspan="22">Payermax</td>
         <td>中国香港</td>
         <td>ALIPAYHK</td>
     </tr>
