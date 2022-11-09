@@ -152,6 +152,44 @@ fQIDAQAB
 </table>
 
 + **签名算法**
++ 
+### **测试卡**
+***
+<table>
+    <tr>
+        <th>支付渠道</th>
+        <th width="100">测试卡号</th>
+        <th >类型</th>
+        <th>说明</th>
+    </tr>
+    <tr>
+        <td rowspan="2">Airwallex</td>
+        <td>4035 5010 0000 0008</td>
+        <td>Visa</td>
+        <td width="100">这张卡无论金额多少都会支付成功</td>
+    </tr>
+    <tr>
+        <td>4012 0003 0000 1003	</td>
+        <td>Visa</td>
+        <td width="100">付款金额为：80.59时，拒绝</td>
+    </tr>
+    <tr>
+        <td >2223 0000 1018 1375</td>
+        <td>Mastercard</td>
+        <td>付款金额为：80.05时，拒绝</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Payermax</td>
+        <td>4444333322221111</td>
+        <td>Visa</td>
+        <td width="100">姓名：James Smith 有效期-年：25 有效期-月：03 CVV：123</td>
+    </tr>
+    <tr>
+        <td>5555555555554444</td>
+        <td>Master</td>
+        <td width="100">姓名：Allen Black 有效期-年：26 有效期-月：11 CVV：357</td>
+    </tr>
+</table>
 
 ### **创建订单**
 ***
