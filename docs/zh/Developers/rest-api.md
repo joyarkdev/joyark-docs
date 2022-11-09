@@ -163,7 +163,7 @@ fQIDAQAB
         <th>说明</th>
     </tr>
     <tr>
-        <td rowspan="2">Airwallex</td>
+        <td rowspan="3">Airwallex</td>
         <td>4035 5010 0000 0008</td>
         <td>Visa</td>
         <td width="100">这张卡无论金额多少都会支付成功</td>
