@@ -391,11 +391,11 @@ fQIDAQAB
 |:----------:|:---:|:------:|:------:|:---------------------------------------------------------------------------------:|
 | timestamp  |  是  | sring  |   32   | 请求时间，符合rfc3339规范，格式：yyyy-MM-dd’T’HH:mm:ss.SSSXXX 事例：2022-01-22T10:00:00.500+08:00 |
 |  orderNo   |  是  | sring  |   30   |                                       平台订单号                                       |
-|   type    |  是  |  int   |   4    |                                          订单类型 1 payment订单 2 subscription订单                                    |
-|   status    |  是  |  string   |   64   |                       CREATE-创建，PAYING-支付中，IN_PROGRESS-支付成功，FAILED-支付失败，REVERSED-取消订单                                                       |
-|   amount    |  是  |  string   | (10,2) |                                  商户传入的订单金额                                            |
-|   currencyCode    |  是  |  string   |   3    |                            订单币种	                                                  |
-|   payTime    |  是  | string |   32   |                                     支付时间                                            |
+|   type    |  是  |  int   |   4    |                         订单类型 1 payment订单 2 subscription订单                         |
+|   status    |  是  |  string   |   64   | CREATE-创建，PAYING-支付中，IN_PROGRESS-支付成功，FAILED-支付失败，REVERSED-取消订单  REFUSE-拒付(只通知1次) |
+|   amount    |  是  |  string   | (10,2) |                                     商户传入的订单金额                                     |
+|   currencyCode    |  是  |  string   |   3    |                                       订单币种	                                       |
+|   payTime    |  是  | string |   32   |                                       支付时间                                        |
 
 
 + **返回**
