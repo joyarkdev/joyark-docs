@@ -14,8 +14,9 @@ renlikang@dalongyun.com
 + **免登陆对接**  
 >若产品对接内含有“免登陆”需求时，需要按照如下操作进行对接：   
 > 1.业务前端会在访问合作产品的URL后方拼接三项参数（openid、channel_name、merchant），范例：http://yourdomian.com?openid=ajjdsaiewq&channel_name=joyark_android&merchant=joyark  
-> 其中“ajjdsaiewq”为openid；“joyark_android”为appkey；“joyark”为merchant  
-> 2.“openid”需要作为用户唯一标识，绑定用户游戏身份。
+> 其中“ajjdsaiewq”为openid；“joyark_android”channel_name；“joyark”为merchant  
+> 2.“openid”需要作为用户唯一标识，绑定用户游戏身份。  
+> 3.“channel_name、merchant”为内部鉴权参数，需要在创建“充值订单”时，与“openid”一并提交
 
 
 ### **签名规则**
