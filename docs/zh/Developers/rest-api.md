@@ -238,6 +238,11 @@ fQIDAQAB
 |   userId   |  否  |  int   |   64   |                                       用户ID                                        |
 |  language  |  否  | sring  |   8    |                                      收银台页面语言                                      |
 | productId  | 有条件 | string |   64   |                               payType= Payermax 必填                                |
+|  + metadata  | 否  | object |        |                                       附加参数                                        |
+|    openid    |  否  | string |  128   |                                       用户标识   openid ｜channel_name ｜merchant三个参数要不全传要不全不传，传其中一个无效                                     |
+| channel_name |  否  | string |  128   |                                       设备标识                                        |
+|   merchant   |  否  | string |  128   |                                       渠道标识                                        |
+| merchantName |  否  | string |   50   |                                        商户名                                        |
 | +products  |  有条件  | Array | Array  |                               payType= Airwallex 必填                               |
 |    code    |  否  | sring  |   64   |                                       商品ID                                        |
 |    desc    |  否  | sring  |  100   |                                       商品描述                                        |
@@ -397,15 +402,20 @@ fQIDAQAB
 ***
 + **接口参数**
 
-|    请求参数    | 必选  |  参数类型  |   长度   |                                        说明                                         |
-|:----------:|:---:|:------:|:------:|:---------------------------------------------------------------------------------:|
-| timestamp  |  是  | sring  |   32   | 请求时间，符合rfc3339规范，格式：yyyy-MM-dd’T’HH:mm:ss.SSSXXX 事例：2022-01-22T10:00:00.500+08:00 |
-|  orderNo   |  是  | sring  |   30   |                                       平台订单号                                       |
-|   type    |  是  |  int   |   4    |                         订单类型 1 payment订单 2 subscription订单                         |
-|   status    |  是  |  string   |   64   | CREATE-创建，PAYING-支付中，IN_PROGRESS-支付成功，FAILED-支付失败，REVERSED-取消订单  REFUSE-拒付(只通知1次) |
-|   amount    |  是  |  string   | (10,2) |                                     商户传入的订单金额                                     |
-|   currencyCode    |  是  |  string   |   3    |                                       订单币种	                                       |
+|     请求参数     | 必选  |  参数类型  |   长度   |                                        说明                                         |
+|:------------:|:---:|:------:|:------:|:---------------------------------------------------------------------------------:|
+|  timestamp   |  是  | sring  |   32   | 请求时间，符合rfc3339规范，格式：yyyy-MM-dd’T’HH:mm:ss.SSSXXX 事例：2022-01-22T10:00:00.500+08:00 |
+|   orderNo    |  是  | sring  |   30   |                                       平台订单号                                       |
+|     type     |  是  |  int   |   4    |                         订单类型 1 payment订单 2 subscription订单                         |
+|    status    |  是  | string |   64   | CREATE-创建，PAYING-支付中，IN_PROGRESS-支付成功，FAILED-支付失败，REVERSED-取消订单  REFUSE-拒付(只通知1次) |
+|    amount    |  是  | string | (10,2) |                                     商户传入的订单金额                                     |
+| currencyCode |  是  | string |   3    |                                       订单币种	                                       |
 |   payTime    |  是  | string |   32   |                                       支付时间                                        |
+|  + metadata  | 否  | object |        |                                       附加参数                                        |
+|    openid    |  否  | string |  128   |                                       用户标识                                        |
+| channel_name |  否  | string |  128   |                                       设备标识                                        |
+|   merchant   |  否  | string |  128   |                                       渠道标识                                        |
+| merchantName |  否  | string |   50   |                                        商户名                                        |
 
 
 + **返回**
