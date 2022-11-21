@@ -242,7 +242,6 @@ fQIDAQAB
 |    openid    |  否  | string |  128   |                                       用户标识   openid ｜channel_name ｜merchant三个参数要不全传要不全不传，传其中一个无效                                     |
 | channel_name |  否  | string |  128   |                                       设备标识                                        |
 |   merchant   |  否  | string |  128   |                                       渠道标识                                        |
-| merchantName |  否  | string |   50   |                                        商户名                                        |
 | +products  |  有条件  | Array | Array  |                               payType= Airwallex 必填                               |
 |    code    |  否  | sring  |   64   |                                       商品ID                                        |
 |    desc    |  否  | sring  |  100   |                                       商品描述                                        |
