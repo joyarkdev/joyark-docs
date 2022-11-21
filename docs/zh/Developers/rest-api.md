@@ -238,10 +238,10 @@ fQIDAQAB
 |   userId   |  否  |  int   |   64   |                                       用户ID                                        |
 |  language  |  否  | sring  |   8    |                                      收银台页面语言                                      |
 | productId  | 有条件 | string |   64   |                               payType= Payermax 必填                                |
-|  + metadata  | 否  | object |        |                                       附加参数                                        |
-|    openid    |  否  | string |  128   |                                       用户标识   openid ｜channel_name ｜merchant三个参数要不全传要不全不传，传其中一个无效                                     |
-| channel_name |  否  | string |  128   |                                       设备标识                                        |
-|   merchant   |  否  | string |  128   |                                       渠道标识                                        |
+|  + metadata  | 有条件  | object |        |                                       附加参数                                        |
+|    openid    |  有条件  | string |  128   |        用户标识   openid ｜channel_name ｜merchant三个参数要不全传要不全不传，传其中一个无效 ；对接免登陆必传        |
+| channel_name |  有条件  | string |  128   |                                       设备标识                                        |
+|   merchant   |  有条件  | string |  128   |                                       渠道标识                                        |
 | +products  |  有条件  | Array | Array  |                               payType= Airwallex 必填                               |
 |    code    |  否  | sring  |   64   |                                       商品ID                                        |
 |    desc    |  否  | sring  |  100   |                                       商品描述                                        |
