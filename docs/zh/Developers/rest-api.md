@@ -225,30 +225,31 @@ fQIDAQAB
 ***
 + **请求参数**
 
-|    请求参数    | 必选  |  参数类型  |   长度   |                                        说明                                         |
-|:----------:|:---:|:------:|:------:|:---------------------------------------------------------------------------------:|
-| timestamp  |  是  | sring  |   32   | 请求时间，符合rfc3339规范，格式：yyyy-MM-dd’T’HH:mm:ss.SSSXXX 事例：2022-01-22T10:00:00.500+08:00 |
-|  payType   |  是  | sring  |   30   |                             支付方式： Payermax Airwallex                              |
-|   mchId    |  是  |  int   |   64   |                                       平台商户号                                       |
-|    good    |  是  | sring  |  100   |                                       商品名称                                        |
-|  currency  |  是  | sring  |   3    |                    币种代码，大写字母 备注：Payermax会根据国家代码自动将所传货币转为本币进行结算                    |
-|   money    |  是  | sring  | (10,2) |                                       支付金额                                        |
-| returnUrl  |  是  | sring  |  256   |                                       跳转地址	                                       |
-|  country   |  否  | sring  |   3    |                                     国家代码，大写字母                                     |
-|   userId   |  否  |  int   |   64   |                                       用户ID                                        |
-|  language  |  否  | sring  |   8    |                                      收银台页面语言                                      |
+|    请求参数    | 必选 |  参数类型  |   长度   |                                        说明                                         |
+|:----------:|:--:|:------:|:------:|:---------------------------------------------------------------------------------:|
+| timestamp  |  是 | sring  |   32   | 请求时间，符合rfc3339规范，格式：yyyy-MM-dd’T’HH:mm:ss.SSSXXX 事例：2022-01-22T10:00:00.500+08:00 |
+|  payType   |  是 | sring  |   30   |                             支付方式： Payermax Airwallex                              |
+|   mchId    |  是 |  int   |   64   |                                       平台商户号                                       |
+|    good    |  是 | sring  |  100   |                                       商品名称                                        |
+|    paymentMethods    |  否  | array  |   array  |                             具体支付方式：例如['card'](payType=Airwallex)                                    |
+|  currency  |  是 | sring  |   3    |                    币种代码，大写字母 备注：Payermax会根据国家代码自动将所传货币转为本币进行结算                    |
+|   money    |  是 | sring  | (10,2) |                                       支付金额                                        |
+| returnUrl  |  是 | sring  |  256   |                                       跳转地址	                                       |
+|  country   |  否 | sring  |   3    |                                     国家代码，大写字母                                     |
+|   userId   |  否 |  int   |   64   |                                       用户ID                                        |
+|  language  |  否 | sring  |   8    |                                      收银台页面语言                                      |
 | productId  | 有条件 | string |   64   |                               payType= Payermax 必填                                |
-|  + metadata  | 有条件  | object |        |                                       附加参数                                        |
-|    openid    |  有条件  | string |  128   |        用户标识   openid ｜channel_name ｜merchant三个参数要不全传要不全不传，传其中一个无效 ；对接免登陆必传        |
-| channel_name |  有条件  | string |  128   |                                       设备标识                                        |
-|   merchant   |  有条件  | string |  128   |                                       渠道标识                                        |
-| +products  |  有条件  | Array | Array  |                               payType= Airwallex 必填                               |
-|    code    |  否  | sring  |   64   |                                       商品ID                                        |
-|    desc    |  否  | sring  |  100   |                                       商品描述                                        |
-|    name    |  否  | sring  |  100   |                                       商品标题                                        |
-|  quantity  |  否  |  int   |   16   |                                       商品数量                                        |
-| unit_price |  否  | (10,2) |  手机号码  |                                       商品单价                                        |
-|    type    |  否  |  int   |   4    |                                       商品类型                                        |
+|  + metadata  | 有条件 | object |        |                                       附加参数                                        |
+|    openid    |  有条件 | string |  128   |        用户标识   openid ｜channel_name ｜merchant三个参数要不全传要不全不传，传其中一个无效 ；对接免登陆必传        |
+| channel_name |  有条件 | string |  128   |                                       设备标识                                        |
+|   merchant   |  有条件 | string |  128   |                                       渠道标识                                        |
+| +products  |  有条件 | Array | Array  |                               payType= Airwallex 必填                               |
+|    code    |  否 | sring  |   64   |                                       商品ID                                        |
+|    desc    |  否 | sring  |  100   |                                       商品描述                                        |
+|    name    |  否 | sring  |  100   |                                       商品标题                                        |
+|  quantity  |  否 |  int   |   16   |                                       商品数量                                        |
+| unit_price |  否 | (10,2) |  手机号码  |                                       商品单价                                        |
+|    type    |  否 |  int   |   4    |                                       商品类型                                        |
 
 + **请求示例**
 ~~~ js
