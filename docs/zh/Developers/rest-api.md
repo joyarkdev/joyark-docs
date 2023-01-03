@@ -240,7 +240,7 @@ fQIDAQAB
 |   money    |  是 | sring  | (10,2) |                                       支付金额                                        |
 | returnUrl  |  是 | sring  |  256   |                                       跳转地址	                                       |
 |  country   |  否 | sring  |   3    |                                     国家代码，大写字母                                     |
-|   userId   |  否 |  int   |   64   |                                       用户ID                                        |
+|   userId   |  有条件 |  int   |   64   |                                 用户ID  payType= Payermax 必填                                       |
 |  language  |  否 | sring  |   8    |                                      收银台页面语言                                      |
 | productId  | 有条件 | string |   64   |                               payType= Payermax 必填                                |
 |  + metadata  | 有条件 | object |        |                                       附加参数                                        |
