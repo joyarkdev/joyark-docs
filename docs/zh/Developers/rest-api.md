@@ -71,17 +71,21 @@ fQIDAQAB
         <td>Mastercard</td>
     </tr>
     <tr>
-        <td rowspan="22">Payermax</td>
+        <td rowspan="21">Payermax</td>
         <td>中国香港</td>
         <td>ALIPAYHK</td>
+    </tr>
+    <tr>
+        <td>中国台湾</td>
+        <td>台灣信用卡、國際信用卡</td>
     </tr>
     <tr>
         <td>印度尼西亚</td>
         <td>BCA、BNI、BRI、BTPN、CIMB、Danamon、MUAMALAT、Mandiri、Maybank、Permata、Sinarmas、Credit/Debit Card(redirect)、Alfamart、BRI、Danamon、Maybank、Permata、One-Touch(DANA)、QRIS、Akulaku、DANA、Doku Wallet、OVO、ShopeePAY</td>
     </tr>
     <tr>
-        <td>印度</td>
-        <td>Net Banking、Net banking -Rapyd、UPI Collect、UPI by Pan、PhonePe / MobiKwik & more、PhonePe / MobiKwik & more by NoPan、PAYTM</td>
+        <td>俄罗斯</td>
+        <td>QIWI</td>
     </tr>
     <tr>
         <td>韩国</td>
