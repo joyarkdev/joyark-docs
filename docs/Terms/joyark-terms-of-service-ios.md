@@ -89,7 +89,7 @@ Please read the following terms of use thoroughly. By accessing or using the Pro
     2. In case a User is making use of the Product in a manner violating these Terms of Use or the law in force, the Provider shall have the right to use the User's personal data within the scope necessary to establish his/her liability. In such a case the Provider shall notify the User of his/her committing illegal activities with a demand of their immediate cessation.
 19. Payments
 
-    O﻿nce you purchase items or subscriptions on JoyArk, it means that you have accepted the End User License Agreement: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+    O﻿nce you purchase items or subscriptions on JoyArk, it means that you have accepted the End User License Agreement: <https://www.apple.com/legal/internet-services/itunes/dev/stdeula/>
 
     1. With expendable items, you will get the usage time of cloud servers.
     2. With subscriptions, you will get the usage time of cloud servers.
