@@ -87,7 +87,7 @@ Please read the following terms of use thoroughly. By accessing or using the Pro
 
     1. The collection, use and disclosure of User's personal by the Provider data are governed by the provisions of the Privacy Policy. A User consents to the use and disclosure of User's personal data in the circumstances stated in that Privacy Policy. A User shall carefully read the full Privacy Policy before deciding to become a User.
     2. In case a User is making use of the Product in a manner violating these Terms of Use or the law in force, the Provider shall have the right to use the User's personal data within the scope necessary to establish his/her liability. In such a case the Provider shall notify the User of his/her committing illegal activities with a demand of their immediate cessation.
-19. Terms of Use
+19. Payments
 
     O﻿nce you purchase items or subscriptions on JoyArk, it means that you have accepted the End User License Agreement: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
 
