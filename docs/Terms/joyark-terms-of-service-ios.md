@@ -87,7 +87,14 @@ Please read the following terms of use thoroughly. By accessing or using the Pro
 
     1. The collection, use and disclosure of User's personal by the Provider data are governed by the provisions of the Privacy Policy. A User consents to the use and disclosure of User's personal data in the circumstances stated in that Privacy Policy. A User shall carefully read the full Privacy Policy before deciding to become a User.
     2. In case a User is making use of the Product in a manner violating these Terms of Use or the law in force, the Provider shall have the right to use the User's personal data within the scope necessary to establish his/her liability. In such a case the Provider shall notify the User of his/her committing illegal activities with a demand of their immediate cessation.
-19. Final Provisions
+19. Terms of Use
+
+    O﻿nce you purchase items or subscriptions on JoyArk, it means that you have accepted the End User License Agreement: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+    1. With expendable items, you will get the usage time of cloud servers.
+    2. With subscriptions, you will get the usage time of cloud servers.
+    3. Auto-renewal can be turned off at any time by going to your Subscription Management.
+20. Final Provisions
 
     1. The Terms of Use are available to Users here.
     2. The Provider reserves the right to modify, supplement, replace or change otherwise these Terms of Use at any time, introducing new Terms of Use, for one or more of the following reasons:
