@@ -17,4 +17,4 @@ Official Email：[support@joyark.com](mailto:support@joyark.com)
 <a href="https://twitter.com/JoyArkGames" rel="some text"><img src="/images/tw.png" alt="" width="40px" /></a>
 </div>
 
-<p align="center">Copyright©2022JOYARK</p>
+<p align="center">Copyright©2025JOYARK</p>
