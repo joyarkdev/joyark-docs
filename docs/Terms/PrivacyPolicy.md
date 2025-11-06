@@ -62,6 +62,7 @@ date: 2022-05-25 05:09:29
    4.3. Edit/Rectify data
 
    In order to edit your personal data, you need to login into your account. After login, you will be able to edit/rectify your data from "Account" section.
+
 5. Google Play Services Log Data
 
    5.1. We want to inform you that whenever you use our Services, in a case of an error in the app we collect data and information (through third party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, user ID, device name, operating system version, the configuration of the app when utilizing our Services, the time and date of your use of the Service, and other statistics.
@@ -93,11 +94,12 @@ date: 2022-05-25 05:09:29
 
 10. Kids Privacy Policy
 
-   10.1. We takes special care to protect the privacy of children, and our Products and Services are not targeted for use by children under the age of 13.
+   10.1. We take special care to protect the privacy of children, and our Products and Services are not targeted for use by children under the age of 13.
  
    10.2. We do not and will not knowingly collect personal information from any child under the age of 13. In the case we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers.
  
    10.3. Please contact us, if you are a parent or guardian and are concerned about the transfer of personal information about your child. If you are under the age of 13, please inform your parents or guardians before you use.
+
 11. Terms & Conditions
 
    11.1. By downloading or using the app, these terms will automatically apply to you - you should make sure therefore that you read them carefully before using the app. You are not allowed to copy, or modify the app, any part of the app, or our trademarks in any way. You are not allowed to attempt to extract the source code of the app, and you also should not try to translate the app into other languages, or make derivative versions. The app itself, and all the trade marks, copyright, database rights and other intellectual property rights related to it, still belong to Jollystart Global Pte. Ltd. .
@@ -111,21 +113,25 @@ date: 2022-05-25 05:09:29
    11.5. With respect to Jollystart Global Pte. Ltd. 's responsibility for your use of the app. When you are using the app, it is important to bear in mind that although we endeavour to ensure that it is updated and correct at all times, we do rely on third parties to provide information to us so that we can make it available to you. Jollystart Global Pte. Ltd.  accepts no liability for any loss, direct or indirect, you experience as a result of relying wholly on this functionality of the app.
  
    11.6. At some point, we may wish to update the app. The app is currently available on Android - the requirements (and for any additional systems we decide to extend the availability of the app to) may change, and you will need to download the updates if you want to keep using the app. Jollystart Global Pte. Ltd. does not promise that it will always update the app so that it is relevant to you and/or works with the Android & iOS version that you have installed on your device. However, you promise to always accept updates to the app when offered to you, We may also wish to stop providing the app, and may terminate use of it at any time without giving notice of termination to you. Unless we tell you otherwise, upon any termination, (a) the rights and licenses granted to you in these terms will end; (b) you must stop using the app, and (if needed) delete it from your device.
+
 12. GDPR
 
    12.1. Jollystart Global Pte. Ltd.  takes the security of your data and our infrastructure very seriously. We are committed to providing an environment that is safe, secure, and available to all of our users.
 
    12.2. Passed in 2016, the new General Data Protection Regulation (GDPR) is the most significant legislative change in European data protection laws since the EU Data Protection Directive (Directive 95/46/EC), introduced in 1995. The GDPR, which becomes enforceable on May 25, 2018, seeks to strengthen the security and protection of personal data in the EU and serve as a single piece of legislation for all of the EU. It will replace the EU Data Protection Directive and all the local laws relating to it. We support the GDPR and will ensure all Jollystart Global Pte. Ltd.  Services comply with its provisions by October 20, 2021. Not only is the GDPR an important step in protecting the fundamental right of privacy for European citizens, it also raises the bar for data protection, security and compliance in the industry.
+
 13. Changes to This Privacy Policy
 
    13.1. We may change this Privacy Policy if we think it is necessary for legal reasons or to reflect changes in JoyArk Services. If so, We will notify you of any changes by posting the new Privacy Policy on this page. We will also update the “Last Updated” date.
 
    13.2. Once we change the Privacy Policy, It will be effective immediately after we post it online.
+
 14. Changes to This Terms and Conditions
 
    14.1. We may change our Terms and Conditions at any time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Terms and Conditions on this page. 
 
    14.2. Once we change the Terms and Conditions, They will be effective immediately after we post them online.
+
 15. Contact Us
 
     If you have any questions or suggestions about our Terms and Conditions, do not hesitate to contact us via support@joyark.com.
